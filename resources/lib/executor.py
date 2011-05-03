@@ -52,12 +52,18 @@ class Main:
                 self._addProgram()
 
     def _loadPrograms(self):
+        self.programs = {}
+        self.prograw = ConfigParser.RawConfigParser()
+
+        #Read from /usr and then read from home dir
+        self.prograw.read("/usr/share/xbmc/userdata/executor.cfg")
+        for p in self.prograw.sections():
+            self.programs[p] = dict(self.prograw.items(p))
+            self.programs[p]['name'] = p
+
         basepath = xbmc.translatePath(Addon.getAddonInfo("Profile"))
         datapath = os.path.join(basepath, "programs.cfg")
 
-        self.programs = {}
-
-        self.prograw = ConfigParser.RawConfigParser()
         self.prograw.read(datapath)
         for p in self.prograw.sections():
             self.programs[p] = dict(self.prograw.items(p))
