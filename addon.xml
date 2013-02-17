@@ -13,7 +13,7 @@
     <summary lang="fr">Plugin pour executer des programmes externes</summary>
     <description lang="en">Executor is a plugin to start user-specified programs.</description>
     <description lang="hu">Az Executor segítségével saját külső programokat tudsz elindítani.</description>
-    <description lang="fr">Executor est un plugin pour lancer des programmes externes à XBMC<CR>Adaptation pour FRODO, Senufo Février 2013</description>
+    <description lang="fr">Executor est un plugin pour lancer des programmes externes à XBMC, Adaptation pour FRODO, Senufo Février 2013</description>
     <platform>all</platform>
   </extension>
 </addon>
