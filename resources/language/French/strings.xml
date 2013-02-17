@@ -2,7 +2,7 @@
 <strings>
     <!-- Plugin settings -->
     <string id="30000">Mettre XBMC en mode fenêtre avant l'execution</string>
-    <string id="30001">iDéactiver la détection de l'écran de veille</string>
+    <string id="30001">Déactiver la détection de l'écran de veille</string>
     <string id="30002">Déactiver LIRC avant l'éxécution</string>
     <!-- Context menu -->
     <string id="30100">Configuration du plugin</string>
