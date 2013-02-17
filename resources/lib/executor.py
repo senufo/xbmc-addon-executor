@@ -84,22 +84,24 @@ class Main:
     # helper routine for RPC calls, since some methods don't allow return variables
     # JSON doesn't support all of the APIs yet, sadly
     def _rpc(self, method, params, type=None, builtin=False):
-        #rpc = {'jsonrpc': '2.0', 'method': method, 'params': params}
+        #method = Action et params = 199 => toggle to full screen
+        rpc = {'jsonrpc': '2.0', 'method': method, 'params': params}
         #return xbmc.executeJSONRPC(rpc)
-
+        print "EXECUTOR RPC = %s" % rpc
         api = method + '(' + ','.join(params) + ')'
-
+        print "EXECUTOR API = %s" % api
         if builtin:
             xbmc.executebuiltin(api)
             return
 
 #        value = xbmc.executehttpapi(api).replace('<li>', '')
+        value = xbmc.executeJSONRPC(api).replace('<li>', '')
         if type is None:
             return
-#        elif type == 'int':
-#            return int(value)
-#        else:
-#            return value
+        elif type == 'int':
+            return int(value)
+        else:
+            return value
 
     def _execProgram(self):
         try:
