@@ -93,13 +93,13 @@ class Main:
             xbmc.executebuiltin(api)
             return
 
-        value = xbmc.executehttpapi(api).replace('<li>', '')
+#        value = xbmc.executehttpapi(api).replace('<li>', '')
         if type is None:
             return
-        elif type == 'int':
-            return int(value)
-        else:
-            return value
+#        elif type == 'int':
+#            return int(value)
+#        else:
+#            return value
 
     def _execProgram(self):
         try:
