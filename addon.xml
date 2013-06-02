@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.program.executor"
-    name="Executor" version="0.2.5" provider-name="senufo">
+    name="Executor" version="0.2.6" provider-name="senufo">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
   </requires>
@@ -11,9 +11,9 @@
     <summary lang="en">Plugin for executing external programs.</summary>
     <summary lang="hu">Külső programok indítása.</summary>
     <summary lang="fr">Plugin pour executer des programmes externes</summary>
-    <description lang="en">Executor is a plugin to start user-specified programs.</description>
-    <description lang="hu">Az Executor segítségével saját külső programokat tudsz elindítani.</description>
-    <description lang="fr">Executor est un plugin pour lancer des programmes externes à XBMC, Adaptation pour FRODO, Senufo Février 2013</description>
+    <description lang="en">Executor is a plugin to start user-specified programs. Fork plugin https://github.com/kitlaan/xbmc-addon-executor</description>
+    <description lang="hu">Az Executor segítségével saját külső programokat tudsz elindítani. Fork plugin https://github.com/kitlaan/xbmc-addon-executor</description>
+    <description lang="fr">Executor est un plugin pour lancer des programmes externes à XBMC, Adaptation pour FRODO, Senufo Février 2013, Fork du plugin https://github.com/kitlaan/xbmc-addon-executor</description>
     <platform>all</platform>
   </extension>
 </addon>
