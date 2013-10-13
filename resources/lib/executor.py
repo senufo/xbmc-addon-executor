@@ -112,12 +112,12 @@ class Main:
         idleoff = None
 
         # Display a note that we're executing
-        #self._rpc('XBMC.Notification', ['Executor', p['name'], '5000'], builtin=True)
+        self._rpc('XBMC.Notification', ['Executor', p['name'], '5000'], builtin=True)
 
         # Setup environment settings
-        if self.settings['idleoff']:
-            idleoff = self._rpc('GetGuiSetting', ['0', 'powermanagement.displaysoff'], type='int')
-            self._rpc('SetGuiSetting', ['0', 'powermanagement.displaysoff', '0'])
+        #if self.settings['idleoff']:
+        #    idleoff = self._rpc('GetGuiSetting', ['0', 'powermanagement.displaysoff'], type='int')
+        #    self._rpc('SetGuiSetting', ['0', 'powermanagement.displaysoff', '0'])
         if self.settings['windowed']:
             self._rpc('Action', ['199'])
         if self.settings['lircoff']:
